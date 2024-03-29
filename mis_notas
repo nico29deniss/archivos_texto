@@ -1,0 +1,13 @@
+# Crear el archivo my_notes.txt y escribir algunas notas personales
+with open("my_notes.txt", "w") as file:
+    file.write("Tengo que bañar a mis mascotas esta semana.\n")
+    file.write("Necesito recordar sacar la basura por la mañana.\n")
+    file.write("Debo completar todas las tareas de la universidad.\n")
+
+# Abrir el archivo para lectura
+with open("my_notes.txt", "r") as file:
+    # Leer y mostrar cada línea del archivo
+    for line in file:
+        print(line.strip())  # Utilizamos strip para eliminar los saltos de línea extra
+
+# El archivo se cerrará automáticamente al salir del bloque "with"
